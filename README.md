@@ -5,7 +5,7 @@ Facultad de Ingeniería en Sistemas y Computación
 Lic. en Ingeniería de Sistemas Computacionales
 
 </div>
----
+
 
 ## Descripción del proyecto
 
