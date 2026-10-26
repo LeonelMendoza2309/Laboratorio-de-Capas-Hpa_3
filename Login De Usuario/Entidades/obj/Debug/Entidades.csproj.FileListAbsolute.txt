@@ -1,0 +1,6 @@
+C:\Users\Leonel Mendoza\Documents\HPA3\Login De Usuario\Entidades\bin\Debug\Entidades.dll
+C:\Users\Leonel Mendoza\Documents\HPA3\Login De Usuario\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Leonel Mendoza\Documents\HPA3\Login De Usuario\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Leonel Mendoza\Documents\HPA3\Login De Usuario\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Leonel Mendoza\Documents\HPA3\Login De Usuario\Entidades\obj\Debug\Entidades.dll
+C:\Users\Leonel Mendoza\Documents\HPA3\Login De Usuario\Entidades\obj\Debug\Entidades.pdb

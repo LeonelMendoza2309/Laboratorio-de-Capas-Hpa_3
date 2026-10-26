@@ -1,0 +1,44 @@
+﻿using Entidades;
+using MySql.Data.MySqlClient;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Text;
+
+namespace Datos
+{
+    public class D_Usuario : D_Conexion
+    {
+
+        public static E_Usuario Login(string strUsuario, string strPassword)
+        {
+            using (MySqlConnection conexion = new MySqlConnection(cadenaConexion))
+            {
+                conexion.Open();
+
+                using (MySqlCommand cmd = new MySqlCommand("sp_ValidarLoginHash", conexion))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("_dsUsuario", strUsuario);
+                    cmd.Parameters.AddWithValue("_dsPassword", strPassword);
+
+                    using (MySqlDataReader fReader = cmd.ExecuteReader())
+                    {
+                        E_Usuario usuario = new E_Usuario();
+
+                        while (fReader.Read())
+                        {
+                            usuario.ID = fReader.GetInt32(fReader.GetOrdinal("ID"));
+                            usuario.dsUsuario = fReader.GetString(fReader.GetOrdinal("dsUsuario"));
+                        }
+
+                        return usuario;
+                    }
+                }
+            }
+        }
+    }
+}
+      

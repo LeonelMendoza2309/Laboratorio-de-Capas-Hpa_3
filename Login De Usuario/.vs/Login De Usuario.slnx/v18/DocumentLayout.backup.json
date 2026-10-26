@@ -1,0 +1,202 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E9A041CB-9A0D-48F5-B7B0-06F468498184}|Presentaci\u00F3n\\Presentaci\u00F3n.csproj|c:\\users\\leonel mendoza\\documents\\hpa3\\login de usuario\\presentaci\u00F3n\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9A041CB-9A0D-48F5-B7B0-06F468498184}|Presentaci\u00F3n\\Presentaci\u00F3n.csproj|solutionrelative:presentaci\u00F3n\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9A041CB-9A0D-48F5-B7B0-06F468498184}|Presentaci\u00F3n\\Presentaci\u00F3n.csproj|c:\\users\\leonel mendoza\\documents\\hpa3\\login de usuario\\presentaci\u00F3n\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9A041CB-9A0D-48F5-B7B0-06F468498184}|Presentaci\u00F3n\\Presentaci\u00F3n.csproj|solutionrelative:presentaci\u00F3n\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9A041CB-9A0D-48F5-B7B0-06F468498184}|Presentaci\u00F3n\\Presentaci\u00F3n.csproj|C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\presentaci\u00F3n\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E9A041CB-9A0D-48F5-B7B0-06F468498184}|Presentaci\u00F3n\\Presentaci\u00F3n.csproj|solutionrelative:presentaci\u00F3n\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C11ECE-F774-4D85-B486-8F189D487CF5}|Datos\\Datos.csproj|c:\\users\\leonel mendoza\\documents\\hpa3\\login de usuario\\datos\\d_conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C11ECE-F774-4D85-B486-8F189D487CF5}|Datos\\Datos.csproj|solutionrelative:datos\\d_conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B235A7F-1E5C-448C-A95C-5C7E3F18372F}|Entidades\\Entidades.csproj|C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\entidades\\e_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B235A7F-1E5C-448C-A95C-5C7E3F18372F}|Entidades\\Entidades.csproj|solutionrelative:entidades\\e_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72C11ECE-F774-4D85-B486-8F189D487CF5}|Datos\\Datos.csproj|c:\\users\\leonel mendoza\\documents\\hpa3\\login de usuario\\datos\\d_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72C11ECE-F774-4D85-B486-8F189D487CF5}|Datos\\Datos.csproj|solutionrelative:datos\\d_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9A041CB-9A0D-48F5-B7B0-06F468498184}|Presentaci\u00F3n\\Presentaci\u00F3n.csproj|c:\\users\\leonel mendoza\\documents\\hpa3\\login de usuario\\presentaci\u00F3n\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9A041CB-9A0D-48F5-B7B0-06F468498184}|Presentaci\u00F3n\\Presentaci\u00F3n.csproj|solutionrelative:presentaci\u00F3n\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9A041CB-9A0D-48F5-B7B0-06F468498184}|Presentaci\u00F3n\\Presentaci\u00F3n.csproj|c:\\users\\leonel mendoza\\documents\\hpa3\\login de usuario\\presentaci\u00F3n\\frmlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9A041CB-9A0D-48F5-B7B0-06F468498184}|Presentaci\u00F3n\\Presentaci\u00F3n.csproj|solutionrelative:presentaci\u00F3n\\frmlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9A041CB-9A0D-48F5-B7B0-06F468498184}|Presentaci\u00F3n\\Presentaci\u00F3n.csproj|c:\\users\\leonel mendoza\\documents\\hpa3\\login de usuario\\presentaci\u00F3n\\presentaci\u00F3n.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E9A041CB-9A0D-48F5-B7B0-06F468498184}|Presentaci\u00F3n\\Presentaci\u00F3n.csproj|solutionrelative:presentaci\u00F3n\\presentaci\u00F3n.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9A041CB-9A0D-48F5-B7B0-06F468498184}|Presentaci\u00F3n\\Presentaci\u00F3n.csproj|C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\presentaci\u00F3n\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E9A041CB-9A0D-48F5-B7B0-06F468498184}|Presentaci\u00F3n\\Presentaci\u00F3n.csproj|solutionrelative:presentaci\u00F3n\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B30B3DD-9770-470C-97DA-F875DE2ED8E1}|Negocio\\Negocio.csproj|c:\\users\\leonel mendoza\\documents\\hpa3\\login de usuario\\negocio\\n_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B30B3DD-9770-470C-97DA-F875DE2ED8E1}|Negocio\\Negocio.csproj|solutionrelative:negocio\\n_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\Presentaci\u00F3n\\frmLogin.cs",
+              "RelativeDocumentMoniker": "Presentaci\u00F3n\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\Presentaci\u00F3n\\frmLogin.cs*",
+              "RelativeToolTip": "Presentaci\u00F3n\\frmLogin.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-17T19:41:46.139Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmLogin.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\Presentaci\u00F3n\\frmLogin.cs",
+              "RelativeDocumentMoniker": "Presentaci\u00F3n\\frmLogin.cs",
+              "ToolTip": "C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\Presentaci\u00F3n\\frmLogin.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "Presentaci\u00F3n\\frmLogin.cs [Dise\u00F1o]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-17T19:52:29.095Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\Presentaci\u00F3n\\frmPrincipal.cs",
+              "RelativeDocumentMoniker": "Presentaci\u00F3n\\frmPrincipal.cs",
+              "ToolTip": "C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\Presentaci\u00F3n\\frmPrincipal.cs",
+              "RelativeToolTip": "Presentaci\u00F3n\\frmPrincipal.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-17T20:15:31.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "D_Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\Datos\\D_Conexion.cs",
+              "RelativeDocumentMoniker": "Datos\\D_Conexion.cs",
+              "ToolTip": "C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\Datos\\D_Conexion.cs",
+              "RelativeToolTip": "Datos\\D_Conexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-17T16:20:40.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "E_Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\Entidades\\E_Usuario.cs",
+              "RelativeDocumentMoniker": "Entidades\\E_Usuario.cs",
+              "ToolTip": "C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\Entidades\\E_Usuario.cs",
+              "RelativeToolTip": "Entidades\\E_Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-17T14:52:58.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "D_Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\Datos\\D_Usuario.cs",
+              "RelativeDocumentMoniker": "Datos\\D_Usuario.cs",
+              "ToolTip": "C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\Datos\\D_Usuario.cs",
+              "RelativeToolTip": "Datos\\D_Usuario.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-17T16:25:40.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\Presentaci\u00F3n\\Program.cs",
+              "RelativeDocumentMoniker": "Presentaci\u00F3n\\Program.cs",
+              "ToolTip": "C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\Presentaci\u00F3n\\Program.cs",
+              "RelativeToolTip": "Presentaci\u00F3n\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-17T20:06:13.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frmLogin.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\Presentaci\u00F3n\\frmLogin.Designer.cs",
+              "RelativeDocumentMoniker": "Presentaci\u00F3n\\frmLogin.Designer.cs",
+              "ToolTip": "C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\Presentaci\u00F3n\\frmLogin.Designer.cs",
+              "RelativeToolTip": "Presentaci\u00F3n\\frmLogin.Designer.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T13:56:49.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Presentaci\u00F3n.csproj",
+              "DocumentMoniker": "C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\Presentaci\u00F3n\\Presentaci\u00F3n.csproj",
+              "RelativeDocumentMoniker": "Presentaci\u00F3n\\Presentaci\u00F3n.csproj",
+              "ToolTip": "C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\Presentaci\u00F3n\\Presentaci\u00F3n.csproj",
+              "RelativeToolTip": "Presentaci\u00F3n\\Presentaci\u00F3n.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-17T20:27:44.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "frmPrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\Presentaci\u00F3n\\frmPrincipal.cs",
+              "RelativeDocumentMoniker": "Presentaci\u00F3n\\frmPrincipal.cs",
+              "ToolTip": "C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\Presentaci\u00F3n\\frmPrincipal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Presentaci\u00F3n\\frmPrincipal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-17T19:47:53.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "N_Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\Negocio\\N_Usuario.cs",
+              "RelativeDocumentMoniker": "Negocio\\N_Usuario.cs",
+              "ToolTip": "C:\\Users\\Leonel Mendoza\\Documents\\HPA3\\Login De Usuario\\Negocio\\N_Usuario.cs",
+              "RelativeToolTip": "Negocio\\N_Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-17T17:07:59.271Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

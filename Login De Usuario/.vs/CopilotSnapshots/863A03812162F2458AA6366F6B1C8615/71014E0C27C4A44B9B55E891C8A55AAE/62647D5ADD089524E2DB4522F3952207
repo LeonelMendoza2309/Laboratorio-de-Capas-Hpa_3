@@ -1,0 +1,47 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Windows.Forms;
+using Entidades;
+using Negocio;
+
+namespace Presentación
+
+{
+    public partial class frmLogin : Form
+    {
+        public frmLogin()
+        {
+            InitializeComponent();
+        }
+
+        private void btnIniciarSesion_Click(object sender, EventArgs e)
+        {
+            string strUsuario = txtUsuario.Text.Trim();
+            string strPassword = txtContraseña.Text.Trim();
+            E_Usuario usuario = N_Usuario.Login(strUsuario, strPassword);
+            if (usuario != null && usuario.ID > 0)
+            {
+                // Login funciono
+                MessageBox.Show("¡Bienvenido, " + usuario.dsUsuario + "!", "Login Exitoso",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                // Aqu puedes abrir el formulario principal de tu aplicación
+                this.Hide(); // Oculta el formulario de login
+                frmPrincipal principalForm = new frmPrincipal(); // Asegúrate de tener un formulario
+                // principal
+                principalForm.UsuarioBienvenida = usuario.dsUsuario; // Asigna el nombre al formulario principal
+                principalForm.Show();
+                // this.Close(); // Cierra el formulrio de login después de cerrar el
+            }
+            else
+            {
+                // Login falló
+                MessageBox.Show("Usuario o contraseña incorrectos.", "Error de Login",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+    }
+}
+
