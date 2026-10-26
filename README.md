@@ -1,193 +1,248 @@
 <div align="center">
 
-# UNIVERSIDAD TECNOLÓGICA DE PANAMÁ  
+# LABORATORIO: LOGIN DE USUARIO
+
+Universidad Tecnológica de Panamá  
 Facultad de Ingeniería en Sistemas y Computación  
-Lic. en Ingeniería de Sistemas Computacionales
+Licenciatura en Ingeniería de Sistemas Computacionales
 
 </div>
 
+## Descripción del laboratorio
 
-## Descripción del proyecto
+Este proyecto corresponde al laboratorio de la carpeta `Login De Usuario` y consiste en un sistema de autenticación desarrollado en C# con arquitectura por capas. La aplicación permite iniciar sesión validando el usuario y la contraseña contra una base de datos MySQL.
 
-Esta es una aplicación CRUD que permite gestionar un inventario de productos desde una interfaz gráfica. Cada producto contiene los siguientes datos:
+La solución está organizada en cuatro capas principales:
 
-- ID
-- Nombre
-- Precio
-- Cantidad
-- Imagen
-
-La aplicación almacena la información en una base de datos MySQL y muestra los registros en un control `DataGridView`.
+- `Entidades`: define los modelos de datos.
+- `Datos`: realiza la conexión a la base de datos y las consultas.
+- `Negocio`: aplica la lógica de negocio.
+- `Presentación`: contiene la interfaz gráfica del sistema.
 
 ---
 
-## Estructura del proyecto
+## Objetivo
 
-Algunas de las carpetas como la Bin entre otras fueron removidas para poder cumplir con la limitacion de MB en el repositorio.
-```text
-Laboratorio-Bases-de-Datos-C-/
-├── ProyectoProducto/
-│       ├── App.config                 # Configuración de .NET y redirecciones de ensamblados
-│       ├── Form1.cs                   # Lógica principal de la interfaz gráfica
-│       ├── Form1.Designer.cs          # Controles generados por el diseñador de Windows Forms
-│       ├── Form1.resx                 # Recursos del formulario
-│       ├── Productos.cs               # Modelo de datos de un producto
-│       ├── conexionDB.cs              # Conexión y operaciones contra MySQL
-│       ├── Program.cs                 # Punto de entrada de la aplicación
-│       ├── packages.config            # Dependencias NuGet
-│       └── ProyectoProducto.csproj    # Archivo del proyecto C#
-└── README.md                          # Documentación del repositorio
-```
+Implementar un sistema de login funcional utilizando una arquitectura en capas y una base de datos relacional, aplicando conceptos de:
 
-### Componentes principales
-
-- **`Productos.cs`**: define el modelo con los elementos de `ID`, `Nombre`, `Precio`, `Cantidad` e `Imagen`.
-- **`Form1.cs`**: es la clase "Principal" por asi decirlo, donde estan los botones y sus funciones.
-- **`conexionDB.cs`**: contiene la conexión a MySQL y las operaciones de consulta, inserción, actualización y eliminación.
+- Programación orientada a objetos.
+- Conexión a MySQL desde C#.
+- Separación de responsabilidades por capas.
+- Validación de credenciales de usuario.
+- Manejo de formularios Windows Forms.
 
 ---
 
 ## Funcionalidades
 
-- Agregar nuevos productos.
-- Consultar y mostrar productos en un `DataGridView`.
-- Buscar productos por ID, nombre, precio o cantidad.
-- Modificar productos existentes.
-- Eliminar productos seleccionados.
-- Seleccionar y almacenar imágenes asociadas a los productos.
-- Mostrar las imágenes almacenadas en la tabla.
-- Limpiar los campos del formulario.
-- Cerrar la aplicación desde el botón **Salir**.
+- Inicio de sesión con usuario y contraseña.
+- Validación de credenciales contra la base de datos.
+- Mensaje de bienvenida al acceder correctamente.
+- Mensaje de error si las credenciales son incorrectas.
+- Acceso a una pantalla principal tras iniciar sesión.
+- Estructura modular para mantener el código ordenado y reutilizable.
+
+---
+
+## Estructura del proyecto
+
+```text
+Laboratorio-de-Capas-Hpa_3/
+├── Login De Usuario/
+│   ├── Datos/
+│   │   ├── D_Conexion.cs          # Cadena de conexión a MySQL
+│   │   ├── D_Usuario.cs            # Lógica de acceso a datos del usuario
+│   │   ├── Datos.csproj            # Proyecto de la capa de datos
+│   │   └── ...                     # Archivos de compilación
+│   │
+│   ├── Entidades/
+│   │   ├── E_Usuario.cs            # Clase modelo del usuario
+│   │   ├── Entidades.csproj        # Proyecto de la capa de entidades
+│   │   └── ...
+│   │
+│   ├── Negocio/
+│   │   ├── N_Usuario.cs            # Lógica de negocio para login
+│   │   ├── Negocio.csproj          # Proyecto de la capa de negocio
+│   │   └── ...
+│   │
+│   ├── Presentación/
+│   │   ├── frmLogin.cs             # Formulario de inicio de sesión
+│   │   ├── frmLogin.Designer.cs    # Diseñador del formulario
+│   │   ├── frmPrincipal.cs         # Pantalla principal después del login
+│   │   ├── Program.cs              # Punto de entrada de la aplicación
+│   │   ├── Presentación.csproj     # Proyecto de la capa de presentación
+│   │   └── ...
+│   │
+│   ├── Login De Usuario.slnx      # Solución del proyecto
+│   └── .vs/                        # Configuración local de Visual Studio
+│
+├── SISTEMALOGIN.sql                # Script de creación de la base de datos
+├── README.md                       # Documentación del repositorio
+└── ...
+```
+
+---
+
+## Componentes principales
+
+### `Entidades`
+
+Contiene la clase `E_Usuario`, la cual representa la estructura del usuario con atributos como:
+
+- `ID`
+- `dsUsuario`
+- `dsPassword`
+- `dsEstado`
+- `dsUsuarioCreacion`
+- `dtFechaCreacion`
+- `idUsuarioModificacion`
+- `dtFechaModificacion`
+
+### `Datos`
+
+En esta capa se encuentran:
+
+- `D_Conexion.cs`: define la cadena de conexión a la base de datos.
+- `D_Usuario.cs`: ejecuta el procedimiento almacenado `sp_ValidarLoginHash` para validar las credenciales.
+
+### `Negocio`
+
+La clase `N_Usuario` sirve como intermediario entre la capa de presentación y la capa de datos. Aquí se centraliza la lógica del login.
+
+### `Presentación`
+
+Contiene los formularios de la aplicación:
+
+- `frmLogin`: formulario principal para autenticar al usuario.
+- `frmPrincipal`: ventana que se muestra una vez que el usuario accede correctamente.
+
+---
+
+## Base de datos
+
+El proyecto utiliza una base de datos llamada `db_sistema_login` y una tabla `Usuario`.
+
+### Script de creación
+
+El archivo `SISTEMALOGIN.sql` incluye la creación de la base de datos y la tabla de usuarios, además de un procedimiento almacenado para validar credenciales.
+
+### Estructura principal de la tabla
+
+```sql
+CREATE TABLE IF NOT EXISTS Usuario (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    dsUsuario VARCHAR(50) NOT NULL,
+    dsPassword VARBINARY(64) NOT NULL,
+    dsEstado CHAR(1) NOT NULL DEFAULT '1',
+    dsUsuarioCreacion VARCHAR(50) DEFAULT NULL,
+    dtFechaCreacion DATETIME DEFAULT CURRENT_TIMESTAMP,
+    idUsuarioModificacion VARCHAR(50) DEFAULT NULL,
+    dtFechaModificacion DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+```
+
+También se define el procedimiento:
+
+```sql
+sp_ValidarLoginHash
+```
+
+Este procedimiento compara el nombre de usuario y la contraseña ingresada con un valor encriptado mediante hash.
 
 ---
 
 ## Tecnologías utilizadas
 
-- **Lenguaje:** C#
-- **Interfaz gráfica:** Windows Forms
-- **Framework:** .NET Framework 4.7.2
-- **Base de datos:** MySQL
-- **Conector:** `MySql.Data`
-- **Controles principales:** `DataGridView`, `PictureBox`, `TextBox`, `Button` y `Panel`
-- **Entorno recomendado:** Visual Studio 2019 o superior
-- **Control de versiones:** Git y GitHub
+- C#
+- Windows Forms (.NET)
+- MySQL
+- MySql.Data connector
+- Visual Studio
+- Arquitectura por capas
 
 ---
 
 ## Requisitos
 
-Para compilar y ejecutar el proyecto se necesita:
+Para ejecutar este proyecto correctamente se necesita:
 
-- Windows 10 en adelante.
-- Visual Studio, en si una versión compatible con proyectos de .NET Framework.
-- .NET Framework 4.7.2.
-- MySQL Server ejecutándose localmente.
-- MySQL Workbench, u otra herramienta para crear la base de datos.
-
----
-
-## Configuración de la base de datos
-
-La aplicación utiliza una base de datos llamada `ProdDB` y una tabla llamada `productos`.
-
-### 1. Crear la base de datos y la tabla
-
-Ejecutar el siguiente script en MySQL:
-
-```sql
-CREATE DATABASE IF NOT EXISTS ProdDB;
-USE ProdDB;
-
-CREATE TABLE IF NOT EXISTS productos (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(150) NOT NULL,
-    precio DECIMAL(10, 2) NOT NULL,
-    cantidad INT NOT NULL DEFAULT 0,
-    imagen LONGBLOB NULL
-);
-```
-
-### 2. Configurar la conexión
-
-En `ProyectoProducto/ProyectoProducto/conexionDB.cs`, ajustar la cadena de conexión de acuerdo con las credenciales del entorno local:
-
-```csharp
-server=localhost;port=3306;database=ProdDB;user id=USUARIO;password=CONTRASEÑA;
-```
-
-> **Importante:** no se deben publicar contraseñas reales en el repositorio. Para un entorno de producción, la cadena de conexión debe almacenarse en una configuración segura o mediante variables de entorno.
+- Windows 10 o posterior.
+- Visual Studio 2019 o superior.
+- .NET Framework compatible con el proyecto.
+- MySQL Server instalado y en ejecución.
+- MySQL Workbench o una herramienta similar para importar el script SQL.
 
 ---
 
-## Instalación y ejecución
+## Configuración
 
-### Primero debe clonar el repositorio
+### 1. Importar la base de datos
 
-```bash
-git clone https://github.com/LeonelMendoza2309/Laboratorio-Bases-de-Datos-C-.git
-cd Laboratorio-Bases-de-Datos-C-
-```
+Ejecuta el archivo `SISTEMALOGIN.sql` en MySQL para crear la base de datos y las tablas necesarias.
 
-### Abrir el proyecto
+### 2. Ajustar la cadena de conexión
 
-1. Iniciar Visual Studio.
-2. Abrir la solución o el archivo `ProyectoProducto/ProyectoProducto/ProyectoProducto.csproj`.
-3. Restaurar los paquetes NuGet si Visual Studio.
-4. Confirmar que MySQL Server esté iniciado.
-5. Verificar la cadena de conexión en `conexionDB.cs`.
-6. Establecer `ProyectoProducto` como proyecto de inicio.
-7. Ejecutar.
-
-El ejecutable generado se encontrará, según la configuración seleccionada, en una de las siguientes carpetas:
+En el archivo:
 
 ```text
-ProyectoProducto/ProyectoProducto/bin/Debug/
-ProyectoProducto/ProyectoProducto/bin/Release/
+Login De Usuario/Datos/D_Conexion.cs
 ```
 
----
+debe configurarse la conexión según el entorno local:
 
-## Uso de la aplicación
+```csharp
+public static string cadenaConexion = "server = localhost; database = db_sistema_login; Uid = root; Pwd = tu_contraseña";
+```
 
-1. **Agregar:** completar nombre, precio, cantidad e imagen; luego seleccionar **Agregar**.
-2. **Consultar:** los productos registrados se muestran automáticamente en la tabla.
-3. **Buscar:** escribir un término en el campo **Búsqueda** para filtrar los registros.
-4. **Modificar:** seleccionar un producto, editar sus datos y presionar **Modificar**.
-5. **Eliminar:** seleccionar una fila y presionar **Eliminar**.
-6. **Limpiar:** presionar **Limpiar** para vaciar los campos del formulario.
-7. **Salir:** presionar **Salir** para cerrar la aplicación.
+> Importante: no se deben guardar contraseñas reales en el repositorio. En producción se recomienda usar una configuración segura o variables de entorno.
 
----
+### 3. Ejecutar la solución
 
-## Problemas y soluciones
-
-| # | Problema | Solución |
-|---:|---|---|
-| 1 | La aplicación no se conecta a MySQL | Verificar que el servidor esté activo, que `ProdDB` exista y que la contraseña fuera correcta. |
-| 2 | No se muestran productos | Confirmar que la tabla `productos` tenga la estructura indicada y que la consulta tenga registros. |
-| 3 | Las imágenes no se visualizan | Comprobar que el archivo seleccionado sea válido y que la columna `imagen` sea de tipo `LONGBLOB`. |
-| 4 | Error al restaurar dependencias | Restaurar los paquetes NuGet desde Visual Studio y comprobar la referencia a `MySql.Data`. |
+1. Abrir `Login De Usuario.slnx` en Visual Studio.
+2. Verificar que el proyecto de inicio sea `Presentación`.
+3. Restaurar paquetes NuGet si es necesario.
+4. Compilar y ejecutar la aplicación.
 
 ---
 
-## Resultados
+## Flujo de autenticación
 
-- Persistencia de datos en MySQL.
-- Operaciones CRUD.
-- Búsqueda dinámica.
-- Visualización de imágenes.
-- Interfaz gráfica de escritorio mediante Windows Forms.
-- Separación básica entre la interfaz, el modelo `Productos` y la capa de acceso a datos `conexionDB`.
+1. El usuario ingresa su nombre de usuario y contraseña en `frmLogin`.
+2. La capa de presentación llama a la capa de negocio.
+3. `N_Usuario.Login(...)` invoca a `D_Usuario.Login(...)`.
+4. La capa de datos ejecuta el procedimiento almacenado `sp_ValidarLoginHash`.
+5. Si los datos coinciden, el usuario recibe un mensaje de bienvenida y se abre `frmPrincipal`.
+6. Si no coinciden, el sistema muestra un error de autenticación.
 
-## Imagenes de prueba:
+---
+
+## Problemas comunes
+
+| Problema | Solución |
+|---|---|
+| No conecta a la base de datos | Verificar que MySQL esté activo y que la cadena de conexión sea correcta. |
+| Error de login aunque el usuario existe | Comprobar que la contraseña se esté validando con el mismo formato de hash esperado por la base de datos. |
+| Falta de referencias | Restaurar NuGet y verificar que se hayan agregado las referencias de MySql.Data. |
+| La solución no abre | Revisar que el proyecto `Presentación` esté configurado como proyecto de inicio. |
+
+---
+
+## Resultados esperados
+
+- Sistema de autenticación funcional.
+- Separación clara entre las capas de la aplicación.
+- Uso correcto de MySQL como motor de persistencia.
+- Ejemplo práctico de un proyecto C# con arquitectura por capas.
 
 ---
 
 ## Conclusiones
 
-- Se aplicaron conceptos de programación orientada a objetos mediante un modelo de productos.
-- Se implementó la comunicación entre una aplicación C# y una base de datos MySQL.
-- Se comprendió el funcionamiento de las operaciones CRUD.
-- El almacenamiento de imágenes como datos binarios permite asociar recursos visuales a los productos.
+Este laboratorio permitió comprender el funcionamiento de una aplicación de login con arquitectura en capas. Se integraron conceptos de modelado de datos, lógica de negocio, acceso a información y presentación visual, demostrando cómo una aplicación de escritorio puede comunicarse con una base de datos MySQL de forma ordenada y mantenible.
 
 ---
+
+## Créditos
+
+Proyecto desarrollado como parte del laboratorio de bases de datos y programación en capas.
+
