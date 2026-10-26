@@ -10,7 +10,7 @@ Licenciatura en Ingeniería de Sistemas Computacionales
 
 ## Descripción del laboratorio
 
-Este proyecto corresponde al laboratorio de la carpeta `Login De Usuario` y consiste en un sistema de autenticación desarrollado en C# con arquitectura por capas. La aplicación permite iniciar sesión validando el usuario y la contraseña contra una base de datos MySQL.
+Este proyecto corresponde al laboratorio de la carpeta `Login De Usuario` y en si consiste en una solucion con distintas capas cada una con su respectivo codigo.
 
 La solución está organizada en cuatro capas principales:
 
@@ -25,7 +25,6 @@ La solución está organizada en cuatro capas principales:
 
 Implementar un sistema de login funcional utilizando una arquitectura en capas y una base de datos relacional, aplicando conceptos de:
 
-- Programación orientada a objetos.
 - Conexión a MySQL desde C#.
 - Separación de responsabilidades por capas.
 - Validación de credenciales de usuario.
@@ -44,7 +43,7 @@ Implementar un sistema de login funcional utilizando una arquitectura en capas y
 
 ---
 
-## Estructura del proyecto
+## Estructura del laboratorio (Solución)
 
 ```text
 Laboratorio-de-Capas-Hpa_3/
@@ -76,9 +75,7 @@ Laboratorio-de-Capas-Hpa_3/
 │   ├── Login De Usuario.slnx      # Solución del proyecto
 │   └── .vs/                        # Configuración local de Visual Studio
 │
-├── SISTEMALOGIN.sql                # Script de creación de la base de datos
-├── README.md                       # Documentación del repositorio
-└── ...
+└── 
 ```
 
 ---
@@ -194,8 +191,6 @@ debe configurarse la conexión según el entorno local:
 public static string cadenaConexion = "server = localhost; database = db_sistema_login; Uid = root; Pwd = tu_contraseña";
 ```
 
-> Importante: no se deben guardar contraseñas reales en el repositorio. En producción se recomienda usar una configuración segura o variables de entorno.
-
 ### 3. Ejecutar la solución
 
 1. Abrir `Login De Usuario.slnx` en Visual Studio.
@@ -232,17 +227,19 @@ public static string cadenaConexion = "server = localhost; database = db_sistema
 - Sistema de autenticación funcional.
 - Separación clara entre las capas de la aplicación.
 - Uso correcto de MySQL como motor de persistencia.
-- Ejemplo práctico de un proyecto C# con arquitectura por capas.
+
+<img width="719" height="388" alt="image" src="https://github.com/user-attachments/assets/d9cf6af4-3d84-40b1-92d4-16caa93988c8" />
+
+<img width="718" height="388" alt="image" src="https://github.com/user-attachments/assets/87a3cddb-61bb-4dc4-9412-85173ed7ba73" />
+
+<img width="718" height="390" alt="image" src="https://github.com/user-attachments/assets/49d3ab7b-6a71-4d76-b4bb-72dd3d331e72" />
+
+<img width="609" height="396" alt="image" src="https://github.com/user-attachments/assets/880ca3ae-aef2-4908-b26b-3299cdf465db" />
 
 ---
 
 ## Conclusiones
 
-Este laboratorio permitió comprender el funcionamiento de una aplicación de login con arquitectura en capas. Se integraron conceptos de modelado de datos, lógica de negocio, acceso a información y presentación visual, demostrando cómo una aplicación de escritorio puede comunicarse con una base de datos MySQL de forma ordenada y mantenible.
+Este laboratorio me permitió comprender de manera correcta los distintos conceptos como lo fueron la utilización y creación de capas y como estas pueden dar una estructura mas limpia y eficiente en la utilización de los proyectos en soluciones. Además, reforcé mis conocimientos en base a la creación y edición de las bases de datos.
 
----
-
-## Créditos
-
-Proyecto desarrollado como parte del laboratorio de bases de datos y programación en capas.
 
